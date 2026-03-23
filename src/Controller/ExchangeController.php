@@ -1,8 +1,8 @@
 <?php
+
 namespace App\Controller;
 
 use App\Service\ExchangeService;
-use Exception;
 
 class ExchangeController
 {
@@ -13,19 +13,14 @@ class ExchangeController
         $this->service = new ExchangeService();
     }
 
-    public function convert(float $amount, string $from, string $to, float $rate): array
+    public function convert(float $amount, string $from, string $to): array
     {
-        try {
-            $result = $this->service->convert($amount, $from, $to, $rate);
+        $result = $this->service->convert($amount, $from, $to);
 
-            return [
-                'valorConvertido' => $result,
-                'simboloMoeda' => $this->getSymbol($to)
-            ];
-        } catch (Exception $e) {
-            http_response_code(400);
-            return ['error' => $e->getMessage()];
-        }
+        return [
+            'valorConvertido' => $result,
+            'simboloMoeda' => $this->getSymbol($to)
+        ];
     }
 
     private function getSymbol(string $currency): string
