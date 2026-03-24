@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Back-end Challenge
 
 Desafio para os futuros programadores back-end da Apiki.
@@ -218,4 +217,4 @@ Desenvolvido por Wellington Ferreira da Silva
 ## 📄 Licença
 
 Este projeto foi desenvolvido apenas para fins de avaliação técnica.
->>>>>>> d3f7f4c (feat: implement currency conversion service)
+
