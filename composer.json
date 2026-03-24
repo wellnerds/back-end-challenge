@@ -1,18 +1,18 @@
 {
-  "name": "currency/api",
-  "description": "Simple Currency Exchange API",
+  "name": "apiki/back-end-challenge",
+  "description": "Desafio para candidatos a back-end.",
   "type": "project",
-  "license": "MIT",
   "require": {
     "php": ">=7.4"
   },
   "require-dev": {
-    "phpunit/phpunit": "^9",
     "squizlabs/php_codesniffer": "^3.4",
     "codeception/codeception": "^4.1",
     "codeception/module-phpbrowser": "^1.0.0",
-    "codeception/module-rest": "^1.0.0"
+    "codeception/module-rest": "^1.0.0",
+    "phpunit/phpunit": "^9"
   },
+  "license": "MIT",
   "autoload": {
     "psr-4": {
       "App\\": "src/"
@@ -20,8 +20,6 @@
   },
   "scripts": {
     "test": "phpunit",
-    "test:legacy": "./vendor/bin/codecept run",
-    "lint": "./vendor/bin/phpcs src/",
-    "lint:fix": "./vendor/bin/phpcbf src/"
+    "lint": "php -l src/index.php"
   }
 }
