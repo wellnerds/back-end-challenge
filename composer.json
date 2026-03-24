@@ -10,7 +10,8 @@
     "codeception/codeception": "^4.1",
     "codeception/module-phpbrowser": "^1.0.0",
     "codeception/module-rest": "^1.0.0",
-    "phpunit/phpunit": "^9"
+    "phpunit/phpunit": "^9",
+    "phpstan/phpstan": "^2.1"
   },
   "license": "MIT",
   "autoload": {
